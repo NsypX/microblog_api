@@ -1,0 +1,33 @@
+The following code support restful JSON API using django database engine:
+
+The api is published on:
+    http://127.0.0.1:8000/posts/ -
+    POST- create new poost
+    GET-  get top tranding list of post (arranged by date and likes)
+
+    http://127.0.0.1:8000/posts/<int:pk> -
+    GET- get post by id
+    PUT- update post by id
+    DELETE- delete post by id
+
+    http://127.0.0.1:8000/posts_dislike/<int:pk> -
+    PUT - lower 1 like from post by id
+
+    http://127.0.0.1:8000/posts_like/<int:pk> -
+    PUT - increase 1 like from post by id
+
+    http://127.0.0.1:8000/insert_n_posts/<int:n>-
+    GET - insert n random posts to database
+
+the api message format-
+    {
+    "title": "string",
+    "body": "string",
+    "likes": 20,
+    }
+
+the admin panel is published on:
+        http://127.0.0.1:8000/admin/ -
+        admin-deanzahavy, password-Dokurochan?
+
+
